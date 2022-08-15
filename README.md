@@ -27,6 +27,8 @@ _WSL Forwarding_ es un script para realizar la configuración de enrutamiento de
   - Si lo es, y por eso te invito a revisar el código del repositorio antes de descargarlo y ejecutarlo para que estes tranquilo de que no contiene ningún código malicioso.
 - ¿Funciona para conectar WSL con otro hipervisor como VirtualBox o VMware?
   - WSL requiere del hipervisor de Microsoft Hyper-V, y generalmente no es posible usar mas de un hipervisor al mismo tiempo.
+- Reinicié la máquina virtual/maquina host y otra vez no puedo acceder a ella desde WSL
+  - Al ser una máquina virtual el DHCP puede cambiar su IP o la configuración de puertos se puede reestablecer al reiniciar tu equipo host, es necesario volver a ejecutar el script. Se recomienda ejecutar el script cada vez que se vaya a conectar a una máquina virtual Hyper-V desde WSL.
 
 ---
 
@@ -48,3 +50,5 @@ _WSL Forwarding_ is a script to configure port forwarding between an instance of
   - Yes it is, and for that I invite you to check the source code in the repository before downloading and executing it so you can be sure that it doesn't contain any malicious code.
 - Does this work to connect WSL with another hypervisor such as VirtualBox or VMware?
   - WSL requires the Microsoft Hyper-V hypervisor, and generally it is not possible to run more than one hypervisor at a time.
+- I restarted my virtual machine/host machine and I can't access it again from WSL
+  - The DHCP can change the IP of the virtual machine, and the port configuration can be reset after restarting your host computer, you need to run the script again. It is adviced to run the script everytime you'll need to connect to a Hyper-V virtual machine from WSL.
